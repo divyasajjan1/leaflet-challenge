@@ -42,8 +42,12 @@ function createMarkers(earthquakeData){
           });
 
 
-        let popupContent = `<h3>Location: ${feature.properties.place}</h3><hr><b>Time: ${new Date(feature.properties.time)}</b><br><b>Magnitude: ${magnitude}</b>`;
-        earthquakeMarker.bindPopup(popupContent);
+        let popupContent = `<h3>Location: ${feature.properties.place}</h3>
+                            <hr>
+                            <b>Magnitude: ${magnitude}</b>
+                            <br>
+                            <b>Depth: ${depth}</b>`;
+        earthquakeMarker.bindTooltip(popupContent).openTooltip();
         markers.push(earthquakeMarker);
     });
 
