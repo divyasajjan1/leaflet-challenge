@@ -8,3 +8,21 @@ body,
 html {
   height: 100%;
 }
+
+.legend {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 5px; */
+}
+.color-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
